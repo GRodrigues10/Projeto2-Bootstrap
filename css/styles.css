@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 * {
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
 }
 
 .bg-primary-color {
@@ -28,11 +28,12 @@
 
 #navbar {
     border-bottom: 1px solid #7a7a7a;
+    background-color: #fff; /* Ajustado para uma cor que contraste com o texto */
     transition: 0.3s ease;
 }
 
 #navbar a:hover {
-    color:#7a7a7a;
+    color: #7a7a7a;
 }
 
 #navbar a.active {
@@ -61,4 +62,88 @@
 
 #navbar-items .nav-item {
     margin: 0 1em;
+}
+
+/* SLIDER */
+
+#slider {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+#slider .carousel-item img {
+    object-fit: cover;
+    height: 60vh; /* Ajuste conforme necessário */
+}
+
+#slider .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+    padding: 1em;
+    border-radius: 5px;
+    bottom: 3em;
+}
+
+#slider .carousel-caption h5 {
+    font-size: 2.5em;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.534);
+    margin-bottom: 0.5em;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+#slider .btn {
+    padding: 0.3em 0.8em;
+    font-size: 1em;
+    margin-top: 1em;
+}
+
+.carousel-control-prev i,
+.carousel-control-next i{
+    color: #111;
+    font-size: 3em;
+}
+
+.carousel-indicators[data-bs-target]{
+    background-color: #222;
+    opacity: 0.8;
+}
+
+.carousel-indicators .active{
+    background-color: white;
+}
+
+@media (max-width: 768px) {
+    #slider .carousel-caption h5 {
+        font-size: 1.5em;
+    }
+
+    #slider .btn {
+        font-size: 0.8em;
+    }
+}
+
+#mini-banners{
+    margin-bottom: 4em;
+
+}
+
+#mini-banners .card{
+    padding: 2em 0.3em;
+    border-radius: 0;
+}
+
+#mini-banners i{
+    font-size: 4em;
+}
+
+#featured-container{
+    margin-bottom: 4em;
+}
+
+.title{
+    font-size: 1.75em;
+    margin-bottom: .4em;
+    position: relative;
 }
